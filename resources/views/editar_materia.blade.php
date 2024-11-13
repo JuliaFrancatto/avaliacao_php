@@ -4,21 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Editar Professor</title>
+  <title>Editar Materia</title>
   <link rel="stylesheet" href="/css/Cadastro.css">
 </head>
 <body>
-  <form class="cadastro" action="/editar_professor/{{$professor->id}}" method="post">
+  <form class="cadastro" action="/editar_materia/{{$materia->id}}" method="post">
     @csrf
     {{ method_field("PUT") }}
     <label for="name">Nome</label>
-    <input type="text" name="name" value="{{$professor->name}}">
+    <input type="text" name="name" value="{{$materia->name}}">
 
-    <label for="cpf">CPF</label>
-    <input type="text" name="cpf" value="{{$professor->cpf}}">
-
-    <label for="email">Email</label>
-    <input type="text" name="email" value="{{$professor->email}}">
+    <label for="professor">Professor</label>
+    <input type="text" name="professor" value="{{$materia->professor}}">
 
     <input type="submit" value="Alterar">
 </form>

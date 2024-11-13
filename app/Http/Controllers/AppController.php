@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class AppController extends Controller
 {
-   // public function inicial() {
-   //     return view('telaInicial');
-   // }
+   public function inicial() {
+      return view('telaInicial');
+   }
 }
