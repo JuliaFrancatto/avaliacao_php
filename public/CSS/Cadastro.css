@@ -91,4 +91,48 @@ input[type="submit"]:hover {
     h1 {
         font-size: 20px;
     }
+
+    form.cadastro select {
+        appearance: none;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4CAF50;
+    background-color: #fff; /* Fundo branco */
+    padding: 12px 20px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+    appearance: none; /* Remove estilo padrão */
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
 }

@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Materia;
 use Illuminate\Http\Request;
 
@@ -17,14 +16,15 @@ class MateriaController extends Controller
     }
 
     public function listar() {
-        $materias = Materia::all();
-
+        $materias = \App\Models\Materia::with('professor')->get();
         return view("materias", ["materias"=>$materias]);
     }
 
     public function formCriarMateria() {
-        return view("cadastro_materia");
+        $professores = \App\Models\Professor::all(); // Busca todos os professores
+        return view('cadastro_materia', ['professores' => $professores]); // Envia para a view
     }
+    
 
     public function deletar($id) {
         $materia = Materia::find($id);

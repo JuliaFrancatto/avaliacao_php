@@ -19,6 +19,9 @@
         <input type="text" name="email">
 
         <input type="submit" value="Salvar">
+
+        <a href="/" class="btn-back">Voltar para a Página Inicial</a>
+
     </form>
 </body>
 </html>

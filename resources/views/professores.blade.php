@@ -36,5 +36,6 @@
     @endforeach
   </table>       
   @endif
+  <a href="/" class="btn-back">Voltar para a Página Inicial</a>
 </body>
 </html>
